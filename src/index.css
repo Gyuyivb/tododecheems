@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(237, 226, 205);
+  color: brown;
+  font-family: 'Single Day', 'Arial', 'Helvetica',
+    sans-serif;
+}
+
+#root{
+  margin: 0 24px;
+  position: relative;
+  min-height: 100vh;
+}
