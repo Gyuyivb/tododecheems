@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/tododecheems/static/css/main.7ac26116.css",
+    "main.js": "/tododecheems/static/js/main.f499dc8a.js",
+    "index.html": "/tododecheems/index.html",
+    "static/media/delete.svg": "/tododecheems/static/media/delete.253668d653616a4e68d22c69ee5da594.svg",
+    "static/media/check.svg": "/tododecheems/static/media/check.38f596e64d38d54463f988385b633c05.svg",
+    "main.7ac26116.css.map": "/tododecheems/static/css/main.7ac26116.css.map",
+    "main.f499dc8a.js.map": "/tododecheems/static/js/main.f499dc8a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7ac26116.css",
+    "static/js/main.f499dc8a.js"
+  ]
+}
