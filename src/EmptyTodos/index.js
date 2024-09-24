@@ -1,9 +1,16 @@
 import React from "react";
+import { TodoContext } from '../TodoContext';
 import './EmptyTodos.css';
 
 function EmptyTodos (){
+    const {
+        totalTodos,
+      } = React.useContext(TodoContext)
     return (
-        <p>Crea tus TODOS</p>
+        totalTodos === 0 ? 
+        <p>Create your TODOs</p>
+        :
+        <p>TODO not found</p>
     );
 }
 

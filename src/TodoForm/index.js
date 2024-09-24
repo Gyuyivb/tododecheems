@@ -26,7 +26,7 @@ function TodoForm (){
     return(
         <form onSubmit={onSubmit}>
             <label>
-                Escribe tu nuevo pendiente
+                Write your new TODO
             </label>
             <textarea
                 placeholder="Dance with the coven"

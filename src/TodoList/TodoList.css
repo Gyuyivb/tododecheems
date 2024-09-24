@@ -1,10 +1,11 @@
 .TodoList{
     border: 10px solid rgb(93, 56, 9);
-    border-radius: 5px;
+    border-radius: 10px;
     display: flex;
-    margin: 20px 5px;
-    padding: 0 0 56px 0;
+    margin: 10px 10px;
+    padding: 0 0 75px 0;
     list-style: none;
     flex-wrap: wrap;
     justify-content: flex-start;
+    
 }

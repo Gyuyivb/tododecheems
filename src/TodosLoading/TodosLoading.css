@@ -2,11 +2,12 @@
     position: relative;
     display: flex;
     justify-content: center;
-    background-color: rgb(205, 183, 145);
+    background-color: rgb(127, 99, 51);
     margin: 12px;
     box-shadow: 0px 5px 50px rgb(48, 27, 1);
     width: 200px;
-    min-height: 230px;
+    min-height: 210px;
+    border-radius: 3px;
 }
 
 .LoadingTodo-text {
@@ -20,7 +21,7 @@
 .LoadingTodo-container,
 .LoadingTodo-completeIcon,
 .LoadingTodo-deleteIcon{
-    background: linear-gradient(90deg, rgb(234, 221, 197), rgb(221, 176, 155));
+    background: linear-gradient(90deg, rgb(234, 221, 197), rgb(212, 96, 42));
     background-size: 300% 300%;
     animation: loadingAnimation 3s ease-in-out
     infinite;

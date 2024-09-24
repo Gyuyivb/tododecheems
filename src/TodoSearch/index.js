@@ -14,12 +14,14 @@ function TodoSearch() {
  
   //el primer estado, valor inicial, de este caso en especifico es estar vacio
     return(
-      <input placeholder="Dancing with the coven" className='TodoSearch'
-      value={searchValue}
-      onChange={(event) => {
-        setSearchValue(event.target.value);
-      }}
-      />
+      <div className='container'>
+        <input placeholder="Dancing with the coven" className='TodoSearch'
+        value={searchValue}
+        onChange={(event) => {
+          setSearchValue(event.target.value);
+        }}
+        />
+      </div>
     );
   }
 
