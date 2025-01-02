@@ -1,4 +1,5 @@
 import { TodoCounter } from '../TodoCounter';
+import { TodoHeader } from '../TodoHeader';
 import { TodoSearch } from '../TodoSearch';
 import { TodoList } from '../TodoList';
 import { TodoItem } from '../TodoItem';
@@ -19,11 +20,21 @@ function AppUI () {
     completeTodo,
     deleteTodo,
     openModal,
+    totalTodos, 
+    completedTodos,
+    searchValue,
+    setSearchValue,
   } = React.useContext(TodoContext)
   return (
     <>
-      <TodoCounter />
-      <TodoSearch />
+      <TodoHeader>
+        <TodoCounter 
+        totalTodos={totalTodos}
+        completedTodos={completedTodos}/>
+        <TodoSearch 
+        searchValue={searchValue}
+        setSearchValue={setSearchValue}/>
+      </TodoHeader>
       
       <TodoList>
         {loading && (

@@ -72,5 +72,9 @@ function TodoProvider ({ children }){
         </TodoContext.Provider>
     )
 }
+  //el estado se consume y se actualiza pero
+  //State, el estado, no se puede cambiar, es inmutable
+  //el segundo elemento que recibe este array en particular lo setea (si es state, el otro es setState con camelCase,) el setter es un actualizador del estado
+  //el primer estado, valor inicial, de este caso en especifico es estar vacio
 
 export { TodoContext, TodoProvider };
