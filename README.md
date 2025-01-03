@@ -1,13 +1,11 @@
- # TODO Machine de Cheems
+ # TODO Machine de Cheems - A Task Completion App
 
-Hi!
+## Hemllo!
 
 This is my first React proyect. It was from a platzi course and I'd like to update it a little bit more in the future.
 However, maybe I'll add more functions or change the desing because right now it's very simple. There are some notes in the code, and they're in spanish and not well written.
 
 You can access to the deployed proyect here (https://gyuyivb.github.io/tododecheems/)
-
-# TodoCheems - A Task Completion App
 
 **TodoCheems** is a simple application designed to help users manage and complete their daily tasks efficiently. Whether you're handling household chores, work assignments, or personal errands, TodoCheems helps you stay organized and on top of everything.
 
