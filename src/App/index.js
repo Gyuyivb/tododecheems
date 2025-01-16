@@ -10,6 +10,7 @@ import { TodosError } from '../TodosError';
 import { EmptyTodos } from '../EmptyTodos';
 import { Modal } from '../Modal';
 import { TodoForm } from '../TodoForm';
+import { ChangeAlertWithStorageListener } from '../ChangeAlert';
 import React from 'react';
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
     setSearchValue,
     addTodo,
     setOpenModal,
+    sincronizeTodos,
   } = useTodos();
   
   return (
@@ -89,6 +91,8 @@ function App() {
       openModal={openModal}
       setOpenModal={setOpenModal}/>
       
+      <ChangeAlertWithStorageListener 
+      sincronize={sincronizeTodos}/>
     </>
   );
 }
