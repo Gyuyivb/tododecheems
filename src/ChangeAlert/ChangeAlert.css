@@ -1,0 +1,34 @@
+.aside-alert {
+    background-color: rgb(224, 203, 167);
+    border-left: 4px solid rgb(93, 56, 9);
+    padding: 20px;  /* Espaciado interno */
+    margin: 20px;  /* Espaciado externo */
+    border-radius: 8px;  /* Bordes redondeados */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    
+    display: flex;
+    flex-direction: column;
+
+    position: fixed;
+    top: 30px;
+    right: 10px;
+    width: 250px;
+    z-index: 1000;  /* Asegurarse de que esté por encima de otros elementos */
+}
+ .aside-alert p {
+    text-align: left;
+    font-size: 25px;
+ }
+ .btn {
+    align-self: center;  /* Centra solo el botón dentro del contenedor */
+    padding: 10px 20px;
+    background-color: rgb(218, 146, 38);;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: rgb(225, 190, 136);
+}

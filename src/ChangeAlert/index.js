@@ -1,17 +1,19 @@
 import React from "react";
 import { withStorageListener } from "./withStorageListener";
+import './ChangeAlert.css';
 
 function ChangeAlert({ show, toggleShow }) {
    if (show) {
      return (
-        <div>
-            <p>Habemus change</p>
+        <aside className='aside-alert'>
+            <p>There's a change in other window</p>
             <button
+            className='btn'
             onClick={() => toggleShow(false)}
             >
                 Refresh site
             </button>
-        </div>
+        </aside>
     );
     } else{
         return null
