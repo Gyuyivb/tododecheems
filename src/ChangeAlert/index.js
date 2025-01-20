@@ -1,8 +1,9 @@
 import React from "react";
-import { withStorageListener } from "./withStorageListener";
+import { useStorageListener } from "./useStorageListener";
 import './ChangeAlert.css';
 
-function ChangeAlert({ show, toggleShow }) {
+function ChangeAlert({ sincronize }) {
+    const { show, toggleShow } = useStorageListener(sincronize);
    if (show) {
      return (
         <aside className='aside-alert'>
@@ -20,6 +21,5 @@ function ChangeAlert({ show, toggleShow }) {
     }
 }
 
-const ChangeAlertWithStorageListener = withStorageListener(ChangeAlert)
 
-export { ChangeAlertWithStorageListener };
+export { ChangeAlert };
