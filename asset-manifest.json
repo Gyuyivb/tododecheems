@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/tododecheems/static/css/main.a5a6909f.css",
-    "main.js": "/tododecheems/static/js/main.d1e990c2.js",
+    "main.css": "/tododecheems/static/css/main.dde80955.css",
+    "main.js": "/tododecheems/static/js/main.5515e3f4.js",
     "index.html": "/tododecheems/index.html",
     "static/media/delete.svg": "/tododecheems/static/media/delete.253668d653616a4e68d22c69ee5da594.svg",
     "static/media/check.svg": "/tododecheems/static/media/check.38f596e64d38d54463f988385b633c05.svg",
-    "main.a5a6909f.css.map": "/tododecheems/static/css/main.a5a6909f.css.map",
-    "main.d1e990c2.js.map": "/tododecheems/static/js/main.d1e990c2.js.map"
+    "main.dde80955.css.map": "/tododecheems/static/css/main.dde80955.css.map",
+    "main.5515e3f4.js.map": "/tododecheems/static/js/main.5515e3f4.js.map"
   },
   "entrypoints": [
-    "static/css/main.a5a6909f.css",
-    "static/js/main.d1e990c2.js"
+    "static/css/main.dde80955.css",
+    "static/js/main.5515e3f4.js"
   ]
 }
