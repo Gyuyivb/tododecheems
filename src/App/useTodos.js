@@ -50,22 +50,25 @@ function useTodos() {
         saveTodos(newTodos);
     }
 
-
-    return {         
+    const state = {
         loading,
         error,
-        completeTodo,
         totalTodos,
-        searchValue,
-        setSearchValue,
-        searchedTodos,
         completedTodos,
-        deleteTodo,
+        searchValue,
+        searchedTodos,
         openModal,
+    };
+
+    const stateUpdaters = {
+        completeTodo,
+        setSearchValue,
+        deleteTodo,
         setOpenModal,
         addTodo,
         sincronizeTodos,
     };
+    return {state, stateUpdaters}
 }
   //el estado se consume y se actualiza pero
   //State, el estado, no se puede cambiar, es inmutable

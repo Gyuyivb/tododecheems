@@ -14,21 +14,24 @@ import { ChangeAlert } from '../ChangeAlert';
 import React from 'react';
 
 function App() {
+  const {state, stateUpdaters} = useTodos();
   const {
     loading,
     error,
-    searchedTodos,
-    completeTodo,
-    deleteTodo,
-    openModal,
-    totalTodos, 
+    totalTodos,
     completedTodos,
     searchValue,
+    searchedTodos,
+    openModal,
+}= state;
+const {
+    completeTodo,
     setSearchValue,
-    addTodo,
+    deleteTodo,
     setOpenModal,
+    addTodo,
     sincronizeTodos,
-  } = useTodos();
+}= stateUpdaters;
   
   return (
     <>
