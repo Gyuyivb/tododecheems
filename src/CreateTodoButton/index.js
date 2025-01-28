@@ -7,7 +7,6 @@ function CreateTodoButton({ openModal, setOpenModal }){
 return(
     <button className='CreateTodoButton' onClick={(event) => {
         setOpenModal(!modalHandler);
-        console.log('diste click' + openModal)
     }}>
         +
     </button>
