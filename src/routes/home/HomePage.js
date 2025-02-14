@@ -1,19 +1,19 @@
-import { useTodos } from './useTodos';
-import { TodoCounter } from '../TodoCounter';
-import { TodoHeader } from '../TodoHeader';
-import { TodoSearch } from '../TodoSearch';
-import { TodoList } from '../TodoList';
-import { TodoItem } from '../TodoItem';
-import { CreateTodoButton } from '../CreateTodoButton';
-import { TodosLoading } from '../TodosLoading';
-import { TodosError } from '../TodosError';
-import { EmptyTodos } from '../EmptyTodos';
-import { Modal } from '../Modal';
-import { TodoForm } from '../TodoForm';
-import { ChangeAlert } from '../ChangeAlert';
 import React from 'react';
+import { useTodos } from '../useTodos';
+import { TodoCounter } from '../../ui/TodoCounter';
+import { TodoHeader } from '../../ui/TodoHeader';
+import { TodoSearch } from '../../ui/TodoSearch';
+import { TodoList } from '../../ui/TodoList';
+import { TodoItem } from '../../ui/TodoItem';
+import { CreateTodoButton } from '../../ui/CreateTodoButton';
+import { TodosLoading } from '../../ui/TodosLoading';
+import { TodosError } from '../../ui/TodosError';
+import { EmptyTodos } from '../../ui/EmptyTodos';
+import { Modal } from '../../ui/Modal';
+import { TodoForm } from '../../ui/TodoForm';
+import { ChangeAlert } from '../../ui/ChangeAlert';
 
-function App() {
+function HomePage() {
   const {
     loading,
     error,
@@ -32,18 +32,14 @@ function App() {
   
   return (
     <>
-      <TodoHeader 
-      loading={loading}
-      >
+      <TodoHeader loading={loading}>
         <TodoCounter 
         totalTodos={totalTodos}
-        completedTodos={completedTodos}
-        //loading={loading}
+        completedTodos={completedTodos} 
         />
         <TodoSearch 
         searchValue={searchValue}
         setSearchValue={setSearchValue}
-        //loading={loading}
         />
         
       </TodoHeader>
@@ -58,16 +54,6 @@ function App() {
         onLoading={() => <TodosLoading />}
         onEmptyTodos={() => <EmptyTodos />}
         onEmptySearchResults={(searchText) => <p>There are no results for {searchText}</p>}
-        //Render prop
-        // render={todo => (
-        //   <TodoItem 
-        //     key={todo.text} 
-        //     text={todo.text} 
-        //     completed={todo.completed}
-        //     onComplete={() => completeTodo(todo.text)}
-        //     onDelete={() => deleteTodo(todo.text)}
-        //   />
-        // )}
       >
         {//Render function
         todo => (
@@ -97,4 +83,4 @@ function App() {
   );
 }
 
-export default App;
+export { HomePage };
