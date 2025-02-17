@@ -18,6 +18,15 @@
     color: rgb(153, 180, 19);
 }
 
+.Icon-container-edit{
+    cursor: pointer;
+    font-size: 50px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 5px;
+    right: 60px;
+}
+
 .Icon-container-delete{
     cursor: pointer;
     font-size: 50px;
@@ -28,6 +37,9 @@
     color: rgb(209, 134, 58);
 }
 .Icon-container-delete:hover{
+    color: rgb(177, 67, 3);
+}
+.Icon-container-edit:hover{
     color: rgb(177, 67, 3);
 }
 
