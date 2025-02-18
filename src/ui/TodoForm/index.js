@@ -11,7 +11,7 @@ function TodoForm (props){
         props.submitEvent(newTodoValue);
         navigate('/');
     };
-    const onCancel = (event) => {
+    const onCancel = () => {
         navigate('/');
     };
 

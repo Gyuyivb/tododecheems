@@ -12,13 +12,14 @@ function TodoList(props) {
 
         {(!!props.totalTodos && !props.searchedTodos.length) && props.onEmptySearchResults(props.searchText)}
         {
-        // {props.searchedTodos.map(renderFunc)}
+        // esto es basicamente lo que hace la cosa de abajo pero mejor explicado y teniendo en cuenta los patrones de composicion, pero asi funciona porque es asi como se maneja js
+        // props.searchedTodos.map((todo)=>renderFunc(todo));
         }
         {!props.loading && props.searchedTodos.map(renderFunc)}
 
-        <ul className='Todo-list'>
+        {/* <ul className='Todo-list'>
           {props.children}
-        </ul>
+        </ul> */}
       </section>
     );
   }

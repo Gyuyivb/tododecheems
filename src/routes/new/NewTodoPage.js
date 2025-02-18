@@ -7,9 +7,9 @@ function NewTodoPage() {
         <p>New Todo</p>
         
         <TodoForm 
-        label='Escribe tu nuevo todo'
+        label='Write your new todo'
         submitText='Add'
-        submitEvent={() => console.log('llamar a add todo')}
+        submitEvent={() => console.log('llamar a addTodo')}
         />
         </>
     );
