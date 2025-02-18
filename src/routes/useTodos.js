@@ -43,6 +43,14 @@ function useTodos() {
         newTodos[todoIndex].completed = !newTodos[todoIndex].completed;
         saveTodos(newTodos);
     }
+    const editTodo = (id, newText) =>{
+        const newTodos = [...todos];
+        const todoIndex = newTodos.findIndex(
+            (todo) => todo.id === id
+        );
+        newTodos[todoIndex].text = newText;
+        saveTodos(newTodos);
+    }
     const deleteTodo = (id) =>{
         const newTodos = [...todos];
         const todoIndex = newTodos.findIndex(
@@ -56,16 +64,17 @@ function useTodos() {
     return {         
         loading,
         error,
-        completeTodo,
         totalTodos,
-        searchValue,
-        setSearchValue,
         searchedTodos,
+        searchValue,
         completedTodos,
-        deleteTodo,
         openModal,
         setOpenModal,
         addTodo,
+        editTodo,
+        completeTodo,
+        deleteTodo,
+        setSearchValue,
         sincronizeTodos,
     };
 }
