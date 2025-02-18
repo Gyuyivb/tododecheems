@@ -12,21 +12,23 @@ import { EmptyTodos } from '../../ui/EmptyTodos';
 import { Modal } from '../../ui/Modal';
 import { TodoForm } from '../../ui/TodoForm';
 import { ChangeAlert } from '../../ui/ChangeAlert';
+import { useNavigate } from 'react-router-dom';
 
 function HomePage() {
+  const navigate = useNavigate()
   const {
     loading,
     error,
     searchedTodos,
     completeTodo,
     deleteTodo,
-    openModal,
+    //openModal,
     totalTodos, 
     completedTodos,
     searchValue,
     setSearchValue,
     addTodo,
-    setOpenModal,
+    //setOpenModal,
     sincronizeTodos,
   } = useTodos();
   
@@ -58,25 +60,18 @@ function HomePage() {
         {//Render function
         todo => (
           <TodoItem 
-            key={todo.text} 
+            key={todo.id} 
             text={todo.text} 
             completed={todo.completed}
-            onComplete={() => completeTodo(todo.text)}
-            onEdit={() => console.log('editandooo')}
-            onDelete={() => deleteTodo(todo.text)}
+            onComplete={() => completeTodo(todo.id)}
+            onEdit={() => navigate('/edit')}
+            onDelete={() => deleteTodo(todo.id)}
           />
         )}
       </TodoList>
-      {openModal && (
-        <Modal>
-        <TodoForm
-        addTodo={addTodo}
-        setOpenModal={setOpenModal}/> 
-      </Modal>
-      )}
       <CreateTodoButton 
-      openModal={openModal}
-      setOpenModal={setOpenModal}/>
+        onClick={() => navigate('/new')}
+      />
       
       <ChangeAlert 
       sincronize={sincronizeTodos}/>

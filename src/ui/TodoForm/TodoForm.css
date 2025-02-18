@@ -1,8 +1,8 @@
 form {
     width: 90%;
     max-width: 300px;
-    background-color: rgb(215, 201, 181);
     padding: 30px 40px;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;

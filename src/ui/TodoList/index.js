@@ -1,6 +1,7 @@
 import './TodoList.css';
 
 function TodoList(props) {
+  //Renderfunc es una funcion que e devuelve un componente y recibe un todo
   const renderFunc = props.children || props.render
     return(
       <section className='TodoList-container'>
