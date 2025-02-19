@@ -10,10 +10,11 @@ import { TodosLoading } from '../../ui/TodosLoading';
 import { TodosError } from '../../ui/TodosError';
 import { EmptyTodos } from '../../ui/EmptyTodos';
 import { ChangeAlert } from '../../ui/ChangeAlert';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 
 function HomePage() {
   const navigate = useNavigate()
+  const [params, setParams] = useSearchParams();
   const {
     loading,
     error,
