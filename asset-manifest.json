@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/tododecheems/static/css/main.01b74e5c.css",
-    "main.js": "/tododecheems/static/js/main.5515e3f4.js",
+    "main.css": "/tododecheems/static/css/main.2506df68.css",
+    "main.js": "/tododecheems/static/js/main.bd46e233.js",
     "index.html": "/tododecheems/index.html",
     "static/media/delete.svg": "/tododecheems/static/media/delete.253668d653616a4e68d22c69ee5da594.svg",
+    "static/media/edit.svg": "/tododecheems/static/media/edit.900a8fd203adc364a82d0ebc6ad8dc94.svg",
     "static/media/check.svg": "/tododecheems/static/media/check.38f596e64d38d54463f988385b633c05.svg",
-    "main.01b74e5c.css.map": "/tododecheems/static/css/main.01b74e5c.css.map",
-    "main.5515e3f4.js.map": "/tododecheems/static/js/main.5515e3f4.js.map"
+    "main.2506df68.css.map": "/tododecheems/static/css/main.2506df68.css.map",
+    "main.bd46e233.js.map": "/tododecheems/static/js/main.bd46e233.js.map"
   },
   "entrypoints": [
-    "static/css/main.01b74e5c.css",
-    "static/js/main.5515e3f4.js"
+    "static/css/main.2506df68.css",
+    "static/js/main.bd46e233.js"
   ]
 }
