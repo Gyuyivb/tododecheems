@@ -9,8 +9,6 @@ import { CreateTodoButton } from '../../ui/CreateTodoButton';
 import { TodosLoading } from '../../ui/TodosLoading';
 import { TodosError } from '../../ui/TodosError';
 import { EmptyTodos } from '../../ui/EmptyTodos';
-import { Modal } from '../../ui/Modal';
-import { TodoForm } from '../../ui/TodoForm';
 import { ChangeAlert } from '../../ui/ChangeAlert';
 import { useNavigate } from 'react-router-dom';
 
@@ -63,7 +61,13 @@ function HomePage() {
             key={todo.id} 
             text={todo.text} 
             completed={todo.completed}
-            onEdit={() => navigate('/edit/' + todo.id)}
+            onEdit={() => {
+              navigate('/edit/' + todo.id, 
+                {
+                  state: { todo }
+                },
+              );
+            }}
             onComplete={() => completeTodo(todo.id)}
             onDelete={() => deleteTodo(todo.id)}
           />
